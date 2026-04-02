@@ -271,9 +271,7 @@ if "clean_df" not in st.session_state:
 df = apply_filters(st.session_state.clean_df)
 
 
-# ═══════════════════════════════════════════
-#  PAGE 1 — DATA OVERVIEW
-# ═══════════════════════════════════════════
+
 if page == "📁 Data Overview":
     section("Dataset Overview")
     st.subheader("Raw Data Preview")
@@ -306,9 +304,7 @@ if page == "📁 Data Overview":
     st.dataframe(dtype_df.set_index("Column"), use_container_width=True)
 
 
-# ═══════════════════════════════════════════
-#  PAGE 2 — DATA CLEANING
-# ═══════════════════════════════════════════
+
 elif page == "🧹 Data Cleaning":
     section("Data Cleaning & Preprocessing")
     st.subheader("Missing Value Analysis")
@@ -404,10 +400,8 @@ elif page == "🧹 Data Cleaning":
         st.success("Dataset reset to original upload.")
         st.rerun()
 
-
-# ═══════════════════════════════════════════
 #  PAGE 3 — UNIVARIATE ANALYSIS
-# ═══════════════════════════════════════════
+
 elif page == "📈 Univariate Analysis":
     section("Univariate Analysis")
 
@@ -494,10 +488,8 @@ elif page == "📈 Univariate Analysis":
 
         st.plotly_chart(fig3, use_container_width=True)
 
-
-# ═══════════════════════════════════════════
 #  PAGE 4 — BIVARIATE & MULTIVARIATE
-# ═══════════════════════════════════════════
+
 elif page == "🔗 Bivariate & Multivariate":
     section("Bivariate & Multivariate Analysis")
 

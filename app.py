@@ -1,9 +1,7 @@
 """
-=============================================================
   Academic EDA Dashboard — app.py
   Author : Partha Singha
   Stack  : Streamlit · Pandas · NumPy · Plotly · Seaborn
-=============================================================
 """
 
 import streamlit as st
